@@ -15,7 +15,7 @@
 
 <ol>
   <li>Defina uma função chamada potencia que receba dois números como argumento, a base e o expoente. O expoente deve ter um valor padrão de 2. A função deve calcular e retornar a base elevada ao expoente.</li>
-  <li>Crie uma função chamada maior_valor que receba três números como trê argumentos posicionais, exiba o maior número na tela e retorne uma lista ordenada contendo estes números.</li>
+  <li>Crie uma função chamada maior_valor que receba três números como três argumentos posicionais, exiba o maior número na tela e retorne uma lista ordenada contendo estes números.</li>
   <li>Crie uma função chamada imprime_dados que recebe diversos dados de um produto (nome, preço, quantidade em estoque) como argumentos passados obrigatoriamente por palavras-chave e os imprima de forma organizada.</li>
   <li>Para cada uma das funções definidas nas questões anteriores, adicione um DocString que explique o propósito da função, seus argumentos e o valor de retorno, se houver, seguindo a folha de estilo exemplificada abaixo.
 
