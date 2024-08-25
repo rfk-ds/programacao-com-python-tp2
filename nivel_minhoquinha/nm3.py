@@ -1,7 +1,3 @@
-# Escreva um programa que receba uma lista de números
-# (você pode definir a lista inicialmente, mas certifique-se que o código funcionará para quaisquer listas numéricas)
-# e utilize um loop for para calcular a média dos valores da lista. 
-
 def calcular_media(lista_numeros):
   soma = 0
   for numero in lista_numeros:
