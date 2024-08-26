@@ -1,11 +1,6 @@
 def maior_valor(primeiro, segundo, terceiro):
-    lista_numeros = []
-
+    lista_numeros = [primeiro, segundo, terceiro]
     maior_valor = max(primeiro, segundo, terceiro)
-
-    lista_numeros.append(primeiro)
-    lista_numeros.append(segundo)
-    lista_numeros.append(terceiro)
 
     lista_numeros.sort()
     print(f"Maior valor: {maior_valor}")
