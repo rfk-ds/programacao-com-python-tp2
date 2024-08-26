@@ -22,12 +22,28 @@ print(f"Resultado: {teste2}")
 print("\n")
 
 def maior_valor(primeiro, segundo, terceiro):
+    """
+    Determina o maior valor entre três números e ordena os valores em ordem crescente.
+
+    Args:
+    primeiro (float): O primeiro número.
+    segundo (float): O segundo número.
+    terceiro (float): O terceiro número.
+
+    Retorna:
+    Nada: Esta função não retorna um valor, mas imprime o maior valor e a lista ordenada dos números.
+
+    Exibe:
+    Maior valor (float): O maior valor entre os três números fornecidos.
+    Lista ordenada (list): Os três números fornecidos em ordem crescente.
+    """
 
     lista_numeros = [primeiro, segundo, terceiro]
 
     maior_valor = max(primeiro, segundo, terceiro)
 
     lista_numeros.sort()
+
     print(f"Maior valor: {maior_valor}")
     print(f"Lista ordenada: {lista_numeros}")
 
@@ -40,6 +56,17 @@ maior_valor(primeiro, segundo, terceiro)
 print("\n")
 
 def imprime_dados(nome, preco, quantidade):
+    """
+    Imprime os dados de um produto.
+
+    Args:
+    nome (str): O nome do produto.
+    preco (float): O preço do produto.
+    quantidade (int): A quantidade disponível do produto.
+
+    Retorna:
+    Nada
+    """
     print(f"Nome: {nome}")
     print(f"Preço: {preco}")
     print(f"Quantidade: {quantidade}")
