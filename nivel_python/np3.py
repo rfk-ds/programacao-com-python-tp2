@@ -21,13 +21,11 @@ def entrada_dados():
         except ValueError:
             print("Digite um número real")
         
-        input_usuario = input("Deseja continuar? (s/n): ")
-        if input_usuario == "s":
-            continue
-        elif input_usuario == "n":
+        input_usuario = input("Digite 'fim' para encerrar ou pressione enter para prosseguir: ").lower()
+        if input_usuario == "fim":
             break
         else:
-            print("Digite 's' para continuar ou 'n' para sair")
+            continue
 
     return lista_horarios, lista_temperaturas
 
@@ -45,3 +43,30 @@ def calcular_media_ponderada(lista_horarios, lista_temperaturas):
 
     media_ponderada = soma_ponderada / total_peso
     return media_ponderada
+
+
+def verificar_intervalo_seguranca(media_ponderada):
+    if 20 <= media_ponderada <= 30:
+        print(f"A média ponderada das temperaturas ({media_ponderada:.1f}°C) está dentro do intervalo de segurança (20°C a 30°C).")
+    else:
+        print(f"A média ponderada das temperaturas ({media_ponderada:.1f}°C) está fora do intervalo de segurança (20°C a 30°C).")
+
+
+def encontrar_temperaturas_extremas(lista_horarios, lista_temperaturas):
+    min_temp = min(lista_temperaturas)
+    max_temp = max(lista_temperaturas)
+    hora_min_temp = lista_horarios[lista_temperaturas.index(min_temp)]
+    hora_max_temp = lista_horarios[lista_temperaturas.index(max_temp)]
+
+    print(f"A temperatura mais baixa foi {min_temp}°C registrada às {hora_min_temp}h.")
+    print(f"A temperatura mais alta foi {max_temp}°C registrada às {hora_max_temp}h.")
+
+def main():
+    lista_horarios, lista_temperaturas = entrada_dados()
+    media_ponderada = calcular_media_ponderada(lista_horarios, lista_temperaturas)
+
+    if media_ponderada is not None:
+        verificar_intervalo_seguranca(media_ponderada)
+        encontrar_temperaturas_extremas(lista_horarios, lista_temperaturas)
+
+main()
