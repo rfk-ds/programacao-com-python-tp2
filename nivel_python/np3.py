@@ -29,7 +29,19 @@ def entrada_dados():
         else:
             print("Digite 's' para continuar ou 'n' para sair")
 
-    print(lista_horarios) 
-    print(lista_temperaturas)
+    return lista_horarios, lista_temperaturas
 
-entrada_dados()
+def calcular_media_ponderada(lista_horarios, lista_temperaturas):
+    total_peso = 0
+    soma_ponderada = 0
+
+    for i in range(1, len(lista_horarios)):
+        intervalo = lista_horarios[i] - lista_horarios[i - 1]
+        if intervalo < 0:
+            intervalo += 24
+        peso = intervalo
+        total_peso += peso
+        soma_ponderada += lista_temperaturas[i - 1] * peso
+
+    media_ponderada = soma_ponderada / total_peso
+    return media_ponderada
