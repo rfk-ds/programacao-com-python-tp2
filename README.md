@@ -1,53 +1,87 @@
 <h1>Programação com Python (TP2)</h1>
-
-<h2>Parte 1 Nível Minhoquinha</h2>
+<h2>Parte 1 - Nível Minhoquinha</h2>
 
 <ol>
-  <li>Crie um programa que receba uma string como entrada do usuário e use um loop for para criar uma lista com cada caractere da string.</li>
-  <li>Crie um programa que peça ao usuário para inserir números um de cada vez até que ele digite 0. Armazene esses números em uma lista usando um loop while.</li>
-  <li>Escreva um programa que receba uma lista de números (você pode definir a lista inicialmente, mas certifique-se que o código funcionará para quaisquer listas numéricas) e utilize um loop for para calcular a média dos valores da lista.</li>
-  <li>Defina uma função chamada imprime_mensagem que receba uma mensagem como argumento e a imprima na tela.</li>
-  <li>Crie uma função chamada saudacao imprima uma saudação personalizada, como "Olá, [nome do usuário]!", recebendo o nome como argumento da função.</li>
-  <li>Usando a mesma implementação da questão 5 modifique a função para que, caso nenhum argumento seja passado, exiba uma saudação.</li>
+    <li>
+        <strong>Criação de Lista a Partir de String:</strong><br>
+        Crie um programa que receba uma string como entrada do usuário e utilize um loop <code>for</code> para criar uma lista com cada caractere da string.
+    </li>
+    <br>
+    <li>
+        <strong>Armazenamento de Números em Lista:</strong><br>
+        Desenvolva um programa que peça ao usuário para inserir números um de cada vez até que ele digite 0. Armazene esses números em uma lista usando um loop <code>while</code>.
+    </li>
+    <br>
+    <li>
+        <strong>Cálculo da Média de uma Lista de Números:</strong><br>
+        Escreva um programa que receba uma lista de números e utilize um loop <code>for</code> para calcular a média dos valores da lista.
+    </li>
+    <br>
+    <li>
+        <strong>Função Imprime Mensagem:</strong><br>
+        Defina uma função chamada <code>imprime_mensagem</code> que receba uma mensagem como argumento e a imprima na tela.
+    </li>
+    <br>
+    <li>
+        <strong>Função Saudação Personalizada:</strong><br>
+        Crie uma função chamada <code>saudacao</code> que imprima uma saudação personalizada, como "Olá, [nome do usuário]!", recebendo o nome como argumento da função.
+    </li>
+    <br>
+    <li>
+        <strong>Função Saudação Padrão:</strong><br>
+        Modifique a função anterior para que, caso nenhum argumento seja passado, exiba uma saudação padrão.
+    </li>
 </ol>
 
-<h2>Parte 2 Nível Cobrinha</h2>
+<h2>Parte 2 - Nível Cobrinha</h2>
 
 <ol>
-  <li>Defina uma função chamada potencia que receba dois números como argumento, a base e o expoente. O expoente deve ter um valor padrão de 2. A função deve calcular e retornar a base elevada ao expoente.</li>
-  <li>Crie uma função chamada maior_valor que receba três números como três argumentos posicionais, exiba o maior número na tela e retorne uma lista ordenada contendo estes números.</li>
-  <li>Crie uma função chamada imprime_dados que recebe diversos dados de um produto (nome, preço, quantidade em estoque) como argumentos passados obrigatoriamente por palavras-chave e os imprima de forma organizada.</li>
-  <li>Para cada uma das funções definidas nas questões anteriores, adicione um DocString que explique o propósito da função, seus argumentos e o valor de retorno, se houver, seguindo a folha de estilo exemplificada abaixo.
-
-
-  <p>Exemplo de folha de estilo do DocString:</p>
-  <p>def soma(numero_a, numero_b):</p>
-  <p>| """</p>
-  <p>| Realiza a soma entre dois números</p>
-  <p>|</p>
-  <p>| Args:</p>
-  <p>| numero_a (int | float): Primeiro número a ser considerado.</p>
-  <p>| numero_b (int | float): Segundo número a ser considerado.</p>
-  <p>|</p>
-  <p>| Return:</p>
-  <p>| (int | float): Resultado da soma.</p>
-  <p>| """</p></li>
-
-  <li>Defina uma função chamada exibir_mensagem que receba um argumento obrigatório mensagem e um argumento opcional repeticoes, onde repeticoes tem um valor padrão de 1. A função deve imprimir a mensagem o número de vezes especificado por repeticoes.</li>
-  <li>Defina uma função chamada gerar_lista_pares que receba um número n, fornecido pelo usuário, como argumento e retorne uma lista contendo todos os números pares de 0 até n. Utilize um laço for para preencher a lista.  </li>
+    <li>
+        <strong>Função Potência:</strong><br>
+        Defina uma função chamada <code>potencia</code> que receba dois números como argumento, a base e o expoente. O expoente deve ter um valor padrão de 2. A função deve calcular e retornar a base elevada ao expoente.
+    </li>
+    <br>
+    <li>
+        <strong>Função Maior Valor:</strong><br>
+        Crie uma função chamada <code>maior_valor</code> que receba três números como argumentos posicionais, exiba o maior número e retorne uma lista ordenada contendo esses números.
+    </li>
+    <br>
+    <li>
+        <strong>Função Imprime Dados:</strong><br>
+        Crie uma função chamada <code>imprime_dados</code> que recebe dados de um produto (nome, preço, quantidade em estoque) como argumentos obrigatoriamente por palavras-chave e os imprima de forma organizada.
+    </li>
+    <br>
+    <li>
+        <strong>Documentação de Funções:</strong><br>
+        Adicione DocStrings às funções explicando o propósito, argumentos e valor de retorno
+    </li>
+    <br>
+    <li>
+        <strong>Função Exibir Mensagem:</strong><br>
+        Defina uma função chamada <code>exibir_mensagem</code> que receba um argumento obrigatório <code>mensagem</code> e um argumento opcional <code>repeticoes</code>, onde o valor padrão de repeticoes é 1. A função deve imprimir a mensagem o número de vezes especificado por <code>repeticoes</code>.
+    </li>
+    <br>
+    <li>
+        <strong>Função Gerar Lista de Pares:</strong><br>
+        Crie uma função chamada <code>gerar_lista_pares</code> que receba um número <code>n</code> fornecido pelo usuário e retorne uma lista contendo todos os números pares de 0 até <code>n</code>.
+    </li>
 </ol>
 
-<h2>Parte 3 Nível Python</h2>
+<h2>Parte 3 - Nível Python</h2>
 
 <ol>
-  <li>Simulador de Investimentos
-    <p>Crie um programa que simule o crescimento de um investimento ao longo de um período. O programa deve solicitar ao usuário o valor inicial do investimento, a taxa de juros anual e o número de anos. Em seguida, escreva uma função que calcule o valor final do investimento ao final de cada ano e armazene esses valores em uma lista. Imprima o valor acumulado ano a ano (lembre-se que se trata de juros compostos).</p></li>
-
-  <li>Cálculo de Consumo de Combustível
-    <p>Escreva um programa que ajude um motorista a calcular o consumo de combustível de seu veículo. O programa deve solicitar ao usuário que insira a distância percorrida e a quantidade de combustível consumido em várias viagens. Essas informações devem ser armazenadas em uma lista. Em seguida, crie uma função que percorra essa lista e calcule o consumo médio de combustível (km/l) para cada viagem e para o total de todas as viagens.</p></li>
-
-  <li>Monitoramento de Temperatura
-    <p>Você foi contratado para desenvolver um software que monitora as temperaturas registradas por sensores em uma fábrica ao longo do dia.</p>
-    <p>Escreva um programa que utilize um laço while para solicitar ao usuário que informe a hora do registro da temperatura (em um número inteiro) seguido do valor da temperatura registrada. Seu programa deverá conter função de validação da entrada do usuário para garantir que a hora descrita esteja entre 0h e 23h e que a temperatura informada esteja entre -15ºC e 60ºC. E em seguida armazene as informações em duas listas, uma com os horários e outra com as temperaturas.</p>
-    <p>Quando o usuário digitar ‘Fim’ uma função (pode utilizar mais de uma função) deverá receber as duas listas do item anterior como argumentos, calcular a média das temperaturas, ponderada pelo intervalo de tempo entre as medidas e imprimir se a média está dentro do intervalo de segurança (20°C a 30°C) e exibir o horário e o valor da temperatura mais baixa e mais alta do dia.</p></li>
+    <li>
+        <strong>Simulador de Investimentos:</strong><br>
+        Desenvolva um programa que simule o crescimento de um investimento ao longo de um período. O programa deve solicitar ao usuário o valor inicial do investimento, a taxa de juros anual e o número de anos. Crie uma função que calcule o valor final do investimento ao final de cada ano e armazene esses valores em uma lista, imprimindo o valor acumulado ano a ano.
+    </li>
+    <br>
+    <li>
+        <strong>Cálculo de Consumo de Combustível:</strong><br>
+        Escreva um programa que ajude um motorista a calcular o consumo de combustível de seu veículo. Solicite ao usuário a distância percorrida e a quantidade de combustível consumido em várias viagens, armazenando essas informações em uma lista. Crie uma função que percorra a lista e calcule o consumo médio de combustível (km/l) para cada viagem e para o total de todas as viagens.
+    </li>
+    <br>
+    <li>
+        <strong>Monitoramento de Temperatura:</strong><br>
+        Desenvolva um software que monitore as temperaturas registradas por sensores em uma fábrica ao longo do dia. O programa deve solicitar ao usuário o horário (número inteiro) e a temperatura registrada, validando os valores. Ao final, exiba a média das temperaturas, a temperatura mais alta e a mais baixa do dia.
+    </li>
 </ol>
